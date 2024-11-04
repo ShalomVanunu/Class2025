@@ -17,6 +17,4 @@ def main_page():
 def success():
     return "<h1> Success </h1>"
 
-
-
 app.run(port=80, debug=True, host="172.20.143.77")
