@@ -27,7 +27,9 @@ def get_name_by_card_number(card_number):
         cursor.close()
         connection.close()
 
-print(get_name_by_card_number(1234123412341234))
+
+if (__name__) == "__main__" :
+    print(get_name_by_card_number(1234123412341234))
 
 
 # Example usage:

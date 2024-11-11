@@ -7,7 +7,7 @@ def start_server():
 
     # Get local machine name and set a port
     host = "172.20.143.77"
-    port = 5555
+    port = 5544
 
     # Bind the socket to the port
     server_socket.bind((host, port))
@@ -17,10 +17,11 @@ def start_server():
     print(f"Server listening on {host}:{port}")
 
     # Establish a connection
-    client_socket, addr = server_socket.accept()
-    print(f"Got a connection from {addr}")
-
     while True:
+        client_socket, addr = server_socket.accept()
+        print(f"Got a connection from {addr}")
+
+
         # Receive message from client
         code = client_socket.recv(1024).decode('utf-8')
         name = GetNameDB.get_name_by_card_number(code)
